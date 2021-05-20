@@ -1,0 +1,16 @@
+title: SMO-assignment
+description: 周君201800171080
+template:
+  repo: smo-assignment-template
+  name: smo-assignment
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
